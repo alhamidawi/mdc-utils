@@ -46,6 +46,13 @@ public class MdcExtras {
         return new Builder();
     }
 
+    /**
+     * The Builder class is a utility for constructing {@link MdcResourceCollection} instances
+     * in a flexible and convenient manner. It allows for the addition of key-value pairs
+     * as MDC (Mapped Diagnostic Context) entries and facilitates their management and cleanup.
+     * This class is designed to work seamlessly with MDC utilities for structured logging in
+     * frameworks supporting SLF4J MDC.
+     */
     public static class Builder {
 
         private final Map<String, String> extras = new LinkedHashMap<>();
